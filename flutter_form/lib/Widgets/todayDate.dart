@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Date extends StatefulWidget {
-  const Date({Key? key}) : super(key: key);
+class TodayDate extends StatefulWidget {
+  const TodayDate({Key? key}) : super(key: key);
 
   @override
-  State<Date> createState() => _DateState();
+  State<TodayDate> createState() => _DateState();
 }
 
-class _DateState extends State<Date> {
+class _DateState extends State<TodayDate> {
   DateTime todaysDate = new DateTime.now();
   String day = new DateTime.now().day.toString();
   String month = new DateTime.now().month.toString();

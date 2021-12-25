@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:form/Components/date.dart';
-import 'package:form/Components/heading.dart';
-import 'package:form/Components/quote.dart';
-import 'package:form/Components/rating.dart';
-import 'package:form/Components/submitButton.dart';
-import 'package:form/Components/userBigTextInput.dart';
-import 'package:form/Components/userTextInput.dart';
+import 'package:form/Widgets/heading.dart';
+import 'package:form/Widgets/randomQuote.dart';
+import 'package:form/Widgets/submitButton.dart';
+import 'package:form/Widgets/todayDate.dart';
+import 'package:form/Widgets/userBigTextInput.dart';
+import 'package:form/Widgets/userRating.dart';
+import 'package:form/Widgets/userTextInput.dart';
 
 void main() {
   runApp(Form());
@@ -33,9 +33,9 @@ class Form extends StatelessWidget {
                 children: [
                   Heading(),
                   SizedBox(height: 10),
-                  Date(),
+                  TodayDate(),
                   SizedBox(height: 10),
-                  Rating(),
+                  UserRating(),
                   SizedBox(height: 10),
                   UserBigTextInput(),
                   SizedBox(height: 10),

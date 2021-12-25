@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Rating extends StatefulWidget {
-  const Rating({Key? key}) : super(key: key);
+class UserRating extends StatefulWidget {
+  const UserRating({Key? key}) : super(key: key);
 
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Rating> {
+class _State extends State<UserRating> {
   int rating = 0;
 
   @override
