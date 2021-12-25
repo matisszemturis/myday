@@ -1,0 +1,283 @@
+{
+    "expand": "projects",
+    "projects": [
+        {
+            "self": "https://formdev.atlassian.net/rest/api/2/project/10000",
+            "id": "10000",
+            "key": "TES",
+            "name": "testdev",
+            "avatarUrls": {
+                "48x48": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10406",
+                "24x24": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10406?size=small",
+                "16x16": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10406?size=xsmall",
+                "32x32": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10406?size=medium"
+            },
+            "issuetypes": [
+                {
+                    "self": "https://formdev.atlassian.net/rest/api/2/issuetype/10001",
+                    "id": "10001",
+                    "description": "Tasks track small, distinct pieces of work.",
+                    "iconUrl": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+                    "name": "Task",
+                    "untranslatedName": "Task",
+                    "subtask": false,
+                    "scope": {
+                        "type": "PROJECT",
+                        "project": {
+                            "id": "10000"
+                        }
+                    }
+                },
+                {
+                    "self": "https://formdev.atlassian.net/rest/api/2/issuetype/10002",
+                    "id": "10002",
+                    "description": "Epics track collections of related bugs, stories, and tasks.",
+                    "iconUrl": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+                    "name": "Epic",
+                    "untranslatedName": "Epic",
+                    "subtask": false,
+                    "scope": {
+                        "type": "PROJECT",
+                        "project": {
+                            "id": "10000"
+                        }
+                    }
+                },
+                {
+                    "self": "https://formdev.atlassian.net/rest/api/2/issuetype/10003",
+                    "id": "10003",
+                    "description": "Subtasks track small pieces of work that are part of a larger task.",
+                    "iconUrl": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10316?size=medium",
+                    "name": "Subtask",
+                    "untranslatedName": "Subtask",
+                    "subtask": true,
+                    "scope": {
+                        "type": "PROJECT",
+                        "project": {
+                            "id": "10000"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+{
+    [
+        {
+            "expand": "description,lead,issueTypes,url,projectKeys,permissions,insight",
+            "self": "https://formdev.atlassian.net/rest/api/3/project/10000",
+            "id": "10000",
+            "key": "TES",
+            "name": "testdev",
+            "avatarUrls": {
+                "48x48": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406",
+                "24x24": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=small",
+                "16x16": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=xsmall",
+                "32x32": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=medium"
+            },
+            "projectTypeKey": "software",
+            "simplified": true,
+            "style": "next-gen",
+            "isPrivate": false,
+            "properties": {},
+            "entityId": "4c95371e-d2f8-4891-b255-527f33e8f4cd",
+            "uuid": "4c95371e-d2f8-4891-b255-527f33e8f4cd"
+        }
+    ]
+}
+
+{}
+
+
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+    "id": "10002",
+    "self": "https://formdev.atlassian.net/rest/api/3/issue/10002",
+    "key": "TES-3",
+    "fields": {
+        "statuscategorychangedate": "2021-12-23T17:05:22.686+0200",
+        "issuetype": {
+            "self": "https://formdev.atlassian.net/rest/api/3/issuetype/10001",
+            "id": "10001",
+            "description": "Tasks track small, distinct pieces of work.",
+            "iconUrl": "https://formdev.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+            "name": "Task",
+            "subtask": false,
+            "avatarId": 10318,
+            "entityId": "d4a1fe98-3bd9-47f8-b02b-e8703f7d0853",
+            "hierarchyLevel": 0
+        },
+        "timespent": null,
+        "project": {
+            "self": "https://formdev.atlassian.net/rest/api/3/project/10000",
+            "id": "10000",
+            "key": "TES",
+            "name": "testdev",
+            "projectTypeKey": "software",
+            "simplified": true,
+            "avatarUrls": {
+                "48x48": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406",
+                "24x24": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=small",
+                "16x16": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=xsmall",
+                "32x32": "https://formdev.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10406?size=medium"
+            }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "issuerestriction": {
+            "issuerestrictions": {},
+            "shouldDisplay": true
+        },
+        "lastViewed": "2021-12-23T17:05:22.699+0200",
+        "watches": {
+            "self": "https://formdev.atlassian.net/rest/api/3/issue/TES-3/watchers",
+            "watchCount": 1,
+            "isWatching": true
+        },
+        "created": "2021-12-23T17:05:22.411+0200",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "priority": {
+            "self": "https://formdev.atlassian.net/rest/api/3/priority/3",
+            "iconUrl": "https://formdev.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+        },
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "labels": [],
+        "customfield_10016": null,
+        "customfield_10017": null,
+        "customfield_10018": {
+            "hasEpicLinkFieldDependency": false,
+            "showField": false,
+            "nonEditableReason": {
+                "reason": "PLUGIN_LICENSE_ERROR",
+                "message": "The Parent Link is only available to Jira Premium users."
+            }
+        },
+        "customfield_10019": "0|i0000f:",
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": null,
+        "updated": "2021-12-23T17:05:22.411+0200",
+        "status": {
+            "self": "https://formdev.atlassian.net/rest/api/3/status/10000",
+            "description": "",
+            "iconUrl": "https://formdev.atlassian.net/",
+            "name": "To Do",
+            "id": "10000",
+            "statusCategory": {
+                "self": "https://formdev.atlassian.net/rest/api/3/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+            }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "123123"
+                        }
+                    ]
+                }
+            ]
+        },
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "timetracking": {},
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "security": null,
+        "customfield_10007": null,
+        "customfield_10008": null,
+        "customfield_10009": null,
+        "aggregatetimeestimate": null,
+        "attachment": [],
+        "summary": "123123",
+        "creator": {
+            "self": "https://formdev.atlassian.net/rest/api/3/user?accountId=70121%3A89fa97d5-57e0-4181-8ff2-812cbe7a76ef",
+            "accountId": "70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef",
+            "emailAddress": "matiss.zemturis@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/48",
+                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/24",
+                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/16",
+                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/32"
+            },
+            "displayName": "Matiss Zemturis",
+            "active": true,
+            "timeZone": "Europe/Riga",
+            "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+            "self": "https://formdev.atlassian.net/rest/api/3/user?accountId=70121%3A89fa97d5-57e0-4181-8ff2-812cbe7a76ef",
+            "accountId": "70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef",
+            "emailAddress": "matiss.zemturis@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/48",
+                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/24",
+                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/16",
+                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:89fa97d5-57e0-4181-8ff2-812cbe7a76ef/5cb65677-614a-471f-81c7-5a1989bf5081/32"
+            },
+            "displayName": "Matiss Zemturis",
+            "active": true,
+            "timeZone": "Europe/Riga",
+            "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "customfield_10000": "{}",
+        "customfield_10001": null,
+        "customfield_10002": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "votes": {
+            "self": "https://formdev.atlassian.net/rest/api/3/issue/TES-3/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "comment": {
+            "comments": [],
+            "self": "https://formdev.atlassian.net/rest/api/3/issue/10002/comment",
+            "maxResults": 0,
+            "total": 0,
+            "startAt": 0
+        },
+        "worklog": {
+            "startAt": 0,
+            "maxResults": 20,
+            "total": 0,
+            "worklogs": []
+        }
+    }
+}
