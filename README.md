@@ -5,5 +5,5 @@
 4. "r" in terminal to hot reload after making a change
 
 ## Other
-# pubspec.yaml to add fonts, images etc.
-# /lib/main.dart is app root file
+- pubspec.yaml to add fonts, images etc.
+- /lib/main.dart is app root file
