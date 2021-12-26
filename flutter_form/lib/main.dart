@@ -28,24 +28,18 @@ class Form extends StatelessWidget {
           body: Container(
               padding: EdgeInsets.fromLTRB(50, 10, 50, 10),
               child: Column(
-                // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Heading(),
-                  SizedBox(height: 10),
                   TodayDate(),
-                  SizedBox(height: 10),
                   UserRating(),
-                  SizedBox(height: 10),
                   UserBigTextInput(),
-                  SizedBox(height: 10),
                   UserTextInput(),
-                  SizedBox(height: 10),
                   UserTextInput(),
-                  SizedBox(height: 20),
                   RandomQuote(),
-                  SizedBox(height: 20),
-                  SubmitButton()
+                  SubmitButton(),
+                  SizedBox(height: 30),
                 ],
               )),
         ));
