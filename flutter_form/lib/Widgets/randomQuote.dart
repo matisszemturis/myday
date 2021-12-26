@@ -18,6 +18,13 @@ class _RandomQuoteState extends State<RandomQuote> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('$quote'));
+    return Center(
+        child: Text(
+      '$quote',
+      style: TextStyle(
+        color: Colors.white,
+        letterSpacing: 2.0,
+      ),
+    ));
   }
 }

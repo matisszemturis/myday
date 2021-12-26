@@ -9,6 +9,7 @@ class Heading extends StatelessWidget {
       "Today was:".toUpperCase(),
       style: TextStyle(
         fontSize: 20.0,
+        color: Colors.white,
         fontWeight: FontWeight.bold,
       ),
     );

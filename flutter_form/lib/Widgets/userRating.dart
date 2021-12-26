@@ -9,6 +9,8 @@ class UserRating extends StatefulWidget {
 
 class _State extends State<UserRating> {
   int rating = 0;
+  Color inactive = Colors.white;
+  Color active = Colors.blue.shade600;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class _State extends State<UserRating> {
                 highlightColor: Colors.blue.shade100,
                 icon: Icon(
                   Icons.star,
-                  color: rating > 0 ? Colors.blue : Colors.grey.shade700,
+                  color: rating > 0 ? active : inactive,
                 ),
               ),
               IconButton(
@@ -44,7 +46,7 @@ class _State extends State<UserRating> {
                 highlightColor: Colors.blue.shade100,
                 icon: Icon(
                   Icons.star,
-                  color: rating > 1 ? Colors.blue : Colors.grey.shade700,
+                  color: rating > 1 ? active : inactive,
                 ),
               ),
               IconButton(
@@ -56,7 +58,7 @@ class _State extends State<UserRating> {
                 highlightColor: Colors.blue.shade100,
                 icon: Icon(
                   Icons.star,
-                  color: rating > 2 ? Colors.blue : Colors.grey.shade700,
+                  color: rating > 2 ? active : inactive,
                 ),
               ),
               IconButton(
@@ -68,7 +70,7 @@ class _State extends State<UserRating> {
                 highlightColor: Colors.blue.shade100,
                 icon: Icon(
                   Icons.star,
-                  color: rating > 3 ? Colors.blue : Colors.grey.shade700,
+                  color: rating > 3 ? active : inactive,
                 ),
               ),
               IconButton(
@@ -80,7 +82,7 @@ class _State extends State<UserRating> {
                 highlightColor: Colors.blue.shade100,
                 icon: Icon(
                   Icons.star,
-                  color: rating > 4 ? Colors.blue : Colors.grey.shade700,
+                  color: rating > 4 ? active : inactive,
                 ),
               ),
             ],

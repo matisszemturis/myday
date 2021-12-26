@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:form/Widgets/heading.dart';
@@ -26,16 +28,32 @@ class Form extends StatelessWidget {
           //   title: const Text("How was your day?"),
           // ),
           body: Container(
+              color: Colors.grey[850],
               padding: EdgeInsets.fromLTRB(50, 10, 50, 10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Heading(),
-                  TodayDate(),
                   UserRating(),
+                  TodayDate(),
+                  Text("today's distractions".toUpperCase(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 2,
+                      )),
                   UserBigTextInput(),
+                  Text("positive".toUpperCase(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 2,
+                      )),
                   UserTextInput(),
+                  Text("note to self".toUpperCase(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 2,
+                      )),
                   UserTextInput(),
                   RandomQuote(),
                   SubmitButton(),

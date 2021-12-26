@@ -19,18 +19,25 @@ class _DateState extends State<TodayDate> {
       constraints: const BoxConstraints(
         minWidth: double.infinity,
       ),
-      child: Container(
-        decoration: BoxDecoration(
-            // border: Border.all(
-            //   color: Colors.grey.shade500,
-            // ),
-            // borderRadius: BorderRadius.all(
-            //     Radius.circular(5.0) //                 <--- border radius here
-            //     ),
+      child: Center(
+        child: Container(
+          decoration: BoxDecoration(
+              // border: Border.all(
+              //   color: Colors.grey.shade500,
+              // ),
+              // borderRadius: BorderRadius.all(
+              //     Radius.circular(5.0) //                 <--- border radius here
+              //     ),
+              ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              '$day / $month / $year',
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text('$day/$month/$year'),
+          ),
         ),
       ),
     );
