@@ -1,6 +1,6 @@
 class Record {
   int rating;
-  String date;
+  DateTime date;
   String distractions;
   String positive;
   String note;

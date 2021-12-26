@@ -12,15 +12,11 @@ class _SubmitButtonState extends State<SubmitButton> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      // height: double.infinity,
       child: FlatButton(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
             'Submit'.toUpperCase(),
-            // style: TextStyle(
-            //   fontSize: 20.0,
-            // ),
           ),
         ),
         color: Colors.blueAccent,

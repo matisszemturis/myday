@@ -3,24 +3,37 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:form/Widgets/heading.dart';
+import 'package:form/Widgets/inputLabel.dart';
 import 'package:form/Widgets/randomQuote.dart';
 import 'package:form/Widgets/submitButton.dart';
-import 'package:form/Widgets/todayDate.dart';
-import 'package:form/Widgets/userBigTextInput.dart';
+import 'package:form/Widgets/recordsDate.dart';
 import 'package:form/Widgets/userRating.dart';
 import 'package:form/Widgets/userTextInput.dart';
+import 'Classes/record.dart';
 
 void main() {
   runApp(Form());
 }
 
-class Form extends StatelessWidget {
+class Form extends StatefulWidget {
   const Form({Key? key}) : super(key: key);
+
+  @override
+  State<Form> createState() => _FormState();
+}
+
+class _FormState extends State<Form> {
+  Record todaysRecord = Record(
+    rating: 0,
+    date: new DateTime.now(),
+    distractions: "",
+    positive: "test",
+    note: "",
+  );
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // Screen with common UI comp - nav etc.
         theme: ThemeData(fontFamily: 'RobotoMono'),
         home: Scaffold(
           // appBar: AppBar(
@@ -35,26 +48,37 @@ class Form extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Heading(),
-                  UserRating(),
-                  TodayDate(),
-                  Text("today's distractions".toUpperCase(),
-                      style: TextStyle(
-                        color: Colors.white,
-                        letterSpacing: 2,
-                      )),
-                  UserBigTextInput(),
-                  Text("positive".toUpperCase(),
-                      style: TextStyle(
-                        color: Colors.white,
-                        letterSpacing: 2,
-                      )),
-                  UserTextInput(),
-                  Text("note to self".toUpperCase(),
-                      style: TextStyle(
-                        color: Colors.white,
-                        letterSpacing: 2,
-                      )),
-                  UserTextInput(),
+                  UserRating(
+                    rating: todaysRecord.rating,
+                    setRating: (int newRating) => setState(() {
+                      todaysRecord.rating = newRating;
+                    }),
+                  ),
+                  RecordDate(date: todaysRecord.date),
+                  InputLabel(text: "today's distractions"),
+                  UserTextInput(
+                    text: todaysRecord.distractions,
+                    multiline: true,
+                    onChangeText: (String newDistractions) => setState(() {
+                      todaysRecord.distractions = newDistractions;
+                    }),
+                  ),
+                  InputLabel(text: "positive"),
+                  UserTextInput(
+                    text: todaysRecord.positive,
+                    multiline: false,
+                    onChangeText: (String newPositives) => setState(() {
+                      todaysRecord.positive = newPositives;
+                    }),
+                  ),
+                  InputLabel(text: "note o self"),
+                  UserTextInput(
+                    text: todaysRecord.note,
+                    multiline: false,
+                    onChangeText: (String newNotes) => setState(() {
+                      todaysRecord.note = newNotes;
+                    }),
+                  ),
                   RandomQuote(),
                   SubmitButton(),
                   SizedBox(height: 30),
